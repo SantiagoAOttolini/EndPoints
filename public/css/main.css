@@ -1,0 +1,302 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/background.jpg);
+}
+
+#verticalmenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ div#sidebar {
+    display: block;
+}
+
+img {
+    width: 40px;
+}
+
+label img {
+    position: absolute;
+    padding: 15px;   
+}
+    
+label img:hover {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 15px;    
+}
+    
+label {
+    z-index: 1;
+}
+
+#sidebar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    border: 2px solid black;   
+    background-color: rgba(0, 0, 0, 0.753);
+}
+    
+ul {
+    list-style: none;
+}  
+    
+li button {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 145, 2);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #000000;
+    font: 80px 'ChunkFiveRegular';
+    font-weight: 600;
+    font-size: 45px;
+}
+    
+li button:hover {
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 145, 0);;
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #000000;
+    font: 80px 'ChunkFiveRegular';
+    font-weight: 600;
+    font-size: 55px;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 145, 2);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #000000;
+    font: 80px 'ChunkFiveRegular';
+    font-weight: 600;
+    font-size: 45px;
+    text-decoration: none;
+}
+    
+li a:hover {
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 145, 0);;
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #000000;
+    font: 80px 'ChunkFiveRegular';
+    font-weight: 600;
+    font-size: 55px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container h1 {
+    text-align: center; 
+    color: rgb(87, 49, 0);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #001135;
+    font: 65px 'ChunkFiveRegular';
+}
+
+#container h2 {
+    text-align: center; 
+    color: rgb(87, 49, 0);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #001135;
+    font: 35px 'ChunkFiveRegular';
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin: 5px 5px 0 5px;
+}
+
+#showscores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    padding: 1vw;
+    margin-top: -1vh;
+    border-radius: 5px;
+}
+
+#board button {
+    margin: 1vw;
+    height: 3vw;
+    width: 3vw;
+    border: 1px solid #999;
+    border-radius: 50px;
+}
+
+#board button.hidden {
+    visibility: hidden;
+}
+
+#board button.peg {
+    border: 2px solid #4e2a01;
+    border-radius: 50px;
+    background-color: #814501;
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65) 
+}
+
+#board button.peg:hover {
+    background-color: #00000f;
+}
+
+#board button.peg:active {
+    background-color: #381e00;
+}
+
+#board button.hole {
+    border: 2px solid #422300;
+    border-radius: 50px;
+    background-color: #333333;
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65) 
+}
+
+#board button.hole:hover {
+    cursor: default;
+}
+
+#board button.selected {
+    border: 2px solid #976e2d;
+    border-radius: 50px;
+    background-color: #271801;
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65) 
+}
+
+#board button.selected:active {
+    background-color:  #271801;
+}
+
+#board button.suggestion {
+    border: 2px solid #5f1414;
+    background-color: rgb(122, 21, 21);
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65) 
+}
+
+#score {
+    margin-right: 20px;
+    color: rgb(87, 49, 0);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #001135;
+    font: 40px 'ChunkFiveRegular';
+}
+
+#pegs-remaining {
+    color: rgb(87, 49, 0);
+    text-shadow: 0px 1px 0px rgb(63, 36, 0), 0px 2px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 3px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 4px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 5px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 6px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 7px 0px rgb(63, 36, 0), 0px 2px 0px, 0px 8px 7px #001135;
+    font: 40px 'ChunkFiveRegular';
+}
+
+#ranking {
+    position: fixed;
+    padding: 10px;
+    margin-left: -10%;
+    width: 40%;
+    top: 5%;
+    left: 40%;
+    border: 5px solid;
+    background-image: url(../assets/background.jpg);
+    text-align: center;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.close-ranking {
+    text-align: right;
+}
+
+#close-ranking-button {
+    padding: 2px 20px 2px 20px;
+    background: rgba(70, 46, 1, 0.986);
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#user-rank {
+    margin-top: 10px;
+    height: 500px;
+    background-image: url(../assets/background.jpg);
+    border: 5px solid #271801;
+}
+
+#user-rank ul {
+    padding: 15px;
+}
+
+#user-rank ul li {
+    padding: 5px;
+    background: #fff;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#user-rank ul li:nth-child(even) {
+    background: #AAA;
+}
+
+#userForm {
+    padding: 10px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nickuser {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#submit {
+    padding: 5px;
+    margin: 5px;
+    width: 60%;
+    background: #3d330d;
+    border-radius: 5px;
+    border: 0px;
+    color: #fff;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin: 15px 10px 0 10px;
+}
+
